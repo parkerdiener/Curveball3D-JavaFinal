@@ -3,5 +3,5 @@ Implementing Curveball3D using Java and JavaFX
 
 
 ## Documentation
-    - [Project Proposal](docs/projectProposal.md)
-    - [Dev Log](docs/devlog.md)
+- [Project Proposal](projectProposal.md)
+- [Dev Log](devlog.md)
