@@ -5,4 +5,5 @@
 - Wrote [Project Proposal](projectProposal.md)
 - Created repository on [GitHub](https://github.com/parkerdiener/Curveball3D-JavaFinal) and linked project
 - Set up basic project structure
-- Created [README](README.md) and devlog
+- Created [README](README.md), [TODO](TODO.md), and devlog
+- 
