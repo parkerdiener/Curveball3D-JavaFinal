@@ -1,2 +1,3 @@
 # TODOs 
-- Choose structure for classes
+- Create meshes for Tunnel.java
+- Add animation timer and make rotating cube scene

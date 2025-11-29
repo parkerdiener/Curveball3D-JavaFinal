@@ -46,6 +46,7 @@ public class GameWorld
 
 
     // test function adding a box to the scene
+    // call during constructor after camera object is defined
     public void testCube()
     {
         final PhongMaterial redMaterial = new PhongMaterial();
