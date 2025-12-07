@@ -1,5 +1,20 @@
 # Dev Log
 
+## 12/6/2025 - More Class Structure and Config
+### Restructured classes for separation of responsibility
+I started by creating the following packages: app, config, objects, 
+utils, and world. I also created .properties files in an gameData folder
+for easy config modification later. App will contain the main 
+application, which will just focus on starting the game and main ui stuff.
+Config has classes that correspond to the data stored inside the
+.properties files, and loads them with methods from ConfigUtils.java.
+World contains GameWorld, which will hold the objects of the game, and
+provide methods for updating them. GameController will handle the game
+loop logic as well as the Animation timer. Also made the testCube spin.
+![testCube Spinning](testCubeSpin.gif)
+
+
+
 ## 11/28/2025 - Basic Class Structure and 3D Scene
 ### Decided on basic structure for project
 This project will use JavaFX's built-in 3D features. The `GameWorld` 

@@ -1,7 +1,7 @@
 # Final Project Proposal
 
 ## Overview
-I plan to recreate the game Curveball 3D in JavaFX. It is a 3D version of the classic game Pong. Rather than being played in a 2D plane, the environment is a square prism-shaped tunnel with the players on opposite square sides. Similar to Pong, players use paddles to hit the ball back and forth, trying to prevent the opponent from returning it, which costs them a life. [Here](https://www.coolmathgames.com/0-curve-ball-3d) is an example of the game on CoolMathGames. I chose this game because I wanted to challenge myself and implement 3D graphics, and this would be a good starting point.
+I plan to recreate the game Curveball 3D in JavaFX. It is a 3D version of the classic game Pong. Rather than being played in a 2D plane, the environment is a square prism-shaped tunnel with the players on opposite square sides. Similar to Pong, players use paddles to hit the ball back and forth, trying to prevent the opponent from returning it, which costs them a life. [Here](https://www.coolmathgames.com/blog/curve-ball-3d-a-beginner%E2%80%99s-guide-to-our-new-arcade-game/nav) is information about the game on CoolMathGames. I chose this game because I wanted to challenge myself and implement 3D graphics, and this would be a good starting point.
 
 ## Objectives
 * Create a working 3D ball, paddle, and corridor environment. 

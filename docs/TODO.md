@@ -1,3 +1,4 @@
 # TODOs 
-- Create meshes for Tunnel.java
-- Add animation timer and make rotating cube scene
+- Create mesh for Tunnel.java
+- Create GameWorld!
+- Add ball movement
