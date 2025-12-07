@@ -1,11 +1,14 @@
-package edu.srjc.diener.parker.a15_diener_parker.model;
+package edu.srjc.diener.parker.a15_diener_parker.world;
 
+import javafx.animation.AnimationTimer;
+import javafx.geometry.Point3D;
 import javafx.scene.Group;
 import javafx.scene.PerspectiveCamera;
 import javafx.scene.paint.Color;
 import javafx.scene.paint.PhongMaterial;
 import javafx.scene.shape.Box;
 import javafx.scene.shape.DrawMode;
+import javafx.scene.shape.Shape3D;
 import javafx.scene.transform.Rotate;
 import javafx.scene.transform.Translate;
 
@@ -17,11 +20,14 @@ public class GameWorld
     private final Group root;
     private final PerspectiveCamera camera;
 
+    // GameWorldConfig;
+
 //    private final Tunnel tunnel;
 //    private final Curveball ball;
 //    private final UserPaddle userPaddle;
 //    private final AIPaddle aiPaddle;
 
+    private Box testCube;
 
     public GameWorld() {
 
@@ -30,8 +36,23 @@ public class GameWorld
         root = new Group(camera);
 
         // initialize everything else
+//        initBall();
+//        initPaddles();
+//        initTunnel();
 
-        testCube();
+
+        testCube = testCube();
+    }
+
+    private void updateWorld(long now)
+    {
+        // ball movement
+        // paddle movement
+        // collisions
+
+        spin(testCube, 1, Rotate.Y_AXIS);
+        spin(testCube, 1, Rotate.X_AXIS);
+        spin(testCube, 1, Rotate.Z_AXIS);
     }
 
     public Group getRoot()
@@ -47,7 +68,7 @@ public class GameWorld
 
     // test function adding a box to the scene
     // call during constructor after camera object is defined
-    public void testCube()
+    private Box testCube()
     {
         final PhongMaterial redMaterial = new PhongMaterial();
         redMaterial.setSpecularColor(Color.RED);
@@ -64,5 +85,17 @@ public class GameWorld
                 new Translate(0, 0, -15));
 
         root.getChildren().add(testBox);
+
+        return testBox;
+    }
+
+    public Box getTestCube()
+    {
+        return testCube;
+    }
+
+    public void spin(Shape3D objectToSpin, double angle, Point3D axis)
+    {
+        objectToSpin.getTransforms().add(new Rotate(angle, axis));
     }
 }

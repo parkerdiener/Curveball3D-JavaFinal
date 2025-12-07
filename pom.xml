@@ -61,7 +61,7 @@
                         <id>default-cli</id>
                         <configuration>
                             <mainClass>
-                                edu.srjc.diener.parker.a15_diener_parker/edu.srjc.diener.parker.a15_diener_parker.A15_Diener_Parker_Application
+                                edu.srjc.diener.parker.a15_diener_parker/edu.srjc.diener.parker.a15_diener_parker.app.A15_Diener_Parker_Application
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
